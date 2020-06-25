@@ -9,6 +9,10 @@ let foodPairings = {
 };
 
 const converter = (obj) => {
+  let foodList = Object.keys(foodPairings);
+  let drinkList =Object.values(foodPairings);
+  let splitPairing = [[foodList], [drinkList]];
+  return splitPairing;
   // do something
 };
 

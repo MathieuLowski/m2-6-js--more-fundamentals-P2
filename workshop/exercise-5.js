@@ -8,8 +8,12 @@ const foodPairings = {
   strawberries: 'cream',
 };
 
-const getValue = () => {
+const getValue = (obj, str) => {
   // do something
+  if(Object.keys(obj).includes(str)){
+    return obj[str];    //not sure to understant. Is str in [] because it gets returned as an array?
+  }
+  else return 'not available';
 };
 
 expect(getValue(foodPairings, 'burgers'), 'beer');
